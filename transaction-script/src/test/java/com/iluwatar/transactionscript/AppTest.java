@@ -21,9 +21,16 @@
  * THE SOFTWARE.
  */
 
-module com.iluwatar.dao {
-	requires org.slf4j;
-	requires java.sql;
-	requires h2;
-	requires java.naming;
+package com.iluwatar.transactionscript;
+
+import org.junit.jupiter.api.Test;
+
+/**
+ * Tests that Transaction script example runs without errors.
+ */
+public class AppTest {
+  @Test
+  public void test() throws Exception {
+    App.main(new String[]{});
+  }
 }
